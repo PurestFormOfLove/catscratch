@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Catscratch</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div id="Page2" id="menu" class="main">
+
+        <div id="menu" class="main">
+
+            <div id="tablero">
+
+                <div class="row" id="contenedortable">
+                    <h1 class="fondocomputadora">COM</h1>
+                    <div id="cartas-computadora"></div>
+                </div>
+
+                <div class="row" id="separador">
+                    <div id="puntajep2" class="column">
+                        <div id="contadorCOM">
+                            <p id="puntaje">Puntaje: <span>0</span></p>
+                        </div>
+                    </div>
+                    <div id="puntajep1" class="column">
+                        <div id="contadorP1">
+                            <div><p id="puntaje">Puntaje: <span>0</span></p></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" id="contenedor2">
+                    <h1 class="fondojugador">Player</h1>
+                    <div id="cartas-jugador"></div>
+
+                </div>
+                <div id="JugadorHUD">
+                    <div id="JugadorHUD2">
+                        <input type="button" value="Repartir" id="repartir">
+                        <input type="button" value="Terminar Turno" onclick="">
+                        <a href="index.html"><button>Terminar Partida!</button></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script type="text/javascript" src="js/logica.js" defer></script>
+    <script type="text/javascript" src="js/classes/Mazo.js" defer></script>
+    <script type="text/javascript" src="js/classes/Carta.js" defer></script>
+    <script type="text/javascript" src="js/classes/Jugador.js" defer></script>
+    <script type="text/javascript" src="js/classes/Juego.js" defer></script>
+</body>
+
+</html>
