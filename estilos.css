@@ -1,0 +1,134 @@
+#tablero,
+#wrappermenu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+li {
+    height: 30px;
+    line-height: 30px;
+}
+
+#botonjugar {
+    margin-left: 10px;
+}
+
+#wrapperboton {
+    width: 100%;
+    height: 200px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+* {
+    font-family: sans-serif;
+}
+
+#contenedor {
+    width: 600px;
+    padding: 20px;
+    margin: 20px auto;
+    border: 10px solid black;
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    background: black;
+    color: white;
+    margin: 10px 0 0px 0;
+    padding: 20px;
+    font-size: 36px;
+}
+
+.pc,
+.usuario {
+    width: 120px;
+    height: 200px;
+    max-width: 120px;
+    max-height: 200px;
+    border: 1px solid grey;
+    margin: 20px 20px 20px 20px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: orange;
+    vertical-align: top;
+}
+
+.nro {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 24px;
+    display: inline-block;
+}
+
+#puntaje {
+    padding: 10px;
+    text-align: left;
+    color: white;
+}
+
+#puntaje2 {
+    background: blue;
+    padding: 10px;
+    text-align: right;
+    color: white;
+}
+
+input {}
+
+#mensaje {
+    width: 300px;
+    display: none;
+    position: absolute;
+    bottom: 30px;
+    right: 50px;
+}
+
+#separador {
+    background: black;
+    width: auto;
+}
+
+#puntajep1 {
+    float: right;
+    background: blue;
+    width: 50%;
+    text-align: right;
+}
+
+#puntajep2 {
+    float: left;
+    background: red;
+    width: 50%;
+}
+.fondojugador{
+    background: blue;
+}
+.fondocomputadora{
+    background: red;
+    text-align: right;
+}
+#HUDgador{
+    background: black;
+}
+#HUDgador2 {
+  margin: auto;
+  width: 50%;
+  border: 3px solid white;
+  padding: 10px;
+}

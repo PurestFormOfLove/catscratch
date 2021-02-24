@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Catscratch</title>
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+    <div id="Page1">
+        <div id="menu" class="main">
+            <div id="wrappermenu">
+                <h1>CatScratch</h1>
+                <div id="wrapperboton">
+                    <ul>
+                        <li><button id="botonjugar" onclick="return show('Page2','Page1');">Empezar!</button></li>
+                        <li><a href="instrucciones.html"><button>instrucciones</button></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Page2" style="display:none" id="menu" class="main">
+
+        <div id="menu" class="main">
+
+            <div id="tablero">
+
+                <div class="row" id="contenedortable">
+                    <h1 class="fondocomputadora">Computor</h1>
+                    <div class="column pc">
+                        <p class="nro"></p>
+                        <p class="palo"></p>
+                    </div>
+                    <div class="column pc">
+                        <p class="nro"></p>
+                        <p class="palo"></p>
+                    </div>
+                    <div class="column pc">
+                        <p class="nro"></p>
+                        <p class="palo"></p>
+                    </div>
+                    <div class="column pc">
+                        <p class="nro"></p>
+                        <p class="palo"></p>
+                    </div>
+                    <div class="column pc">
+                        <p class="nro"></p>
+                        <p class="palo"></p>
+                    </div>
+                </div>
+
+                <div class="row" id="separador">
+                    <div id="puntajep2" class="column">
+                        <div id="contadorCOM">
+                            <p id="puntaje">Puntaje: <span>0</span></p>
+                        </div>
+                    </div>
+                    <div id="puntajep1" class="column">
+                        <div id="contadorP1">
+                            <p id="puntaje">Puntaje: <span>0</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" id="contenedor2">
+                    <h1 class="fondojugador">Playor</h1>
+                    <div id="cartas-jugador"></div>
+                </div>
+                <div id="HUDgador">
+                    <div id="HUDgador2">
+                        <p id="mensaje2"></p>
+                        <input type="button" value="Terminar Turno" onclick="">
+                        <input type="button" value="Repartir" id="repartir">
+                        <button id="drawbtn">Repartir</button>
+                        <button onclick="return show('Page1','Page2');">Terminar Partida!</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script type="text/javascript" src="js/logica.js" defer></script>
+    <script type="text/javascript" src="js/classes/Mazo.js" defer></script>
+    <script type="text/javascript" src="js/classes/Carta.js" defer></script>
+    <script type="text/javascript" src="js/classes/Jugador.js" defer></script>
+    <script type="text/javascript" src="js/classes/Juego.js" defer></script>
+</body>
+
+</html>
