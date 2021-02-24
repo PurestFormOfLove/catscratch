@@ -6,8 +6,8 @@ class Juego {
         }
         this.mazo = new Mazo()
         this.cartasEnMano = 5
-        this.PuntosP1 = 0
-        this.PuntosCOM = 0
+        this.divJugador = '#cartas-jugador';
+        this.divComputadora = '#cartas-computadora';
     }
 
     repartir() {
@@ -15,33 +15,20 @@ class Juego {
             this.jugadores.jugador1.adicionarCarta(this.mazo.tomarCarta())
             this.jugadores.computadora.adicionarCarta(this.mazo.tomarCarta())
         }
-        this.dibujarCartasJugador();
-        this.dibujarCartasComputadora();
+        this.dibujarCartas(this.divJugador, this.jugadores.jugador1);
+        this.dibujarCartas(this.divComputadora, this.jugadores.computadora);
     }
 
-    dibujarCartasJugador() {
+    dibujarCartas(div, jugador) {
         let html = [];
-        for (const carta of this.jugadores.jugador1.cartas) {
+        for (const carta of jugador.cartas) {
             html.push($(
                 `<div class="column pc">
                     <img src="img/${carta.tipo}.png" width="130" height="200"/>
                 </div>`
             ));
         }
-        $("#cartas-jugador").html();
-        $("#cartas-jugador").append(html);
-    }
-
-    dibujarCartasComputadora() {
-        let html = [];
-        for (const carta of this.jugadores.computadora.cartas) {
-            html.push($(
-                `<div class="column pc">
-                    <img src="img/${carta.tipo}.png" width="130" height="200"/>
-                </div>`
-            ));
-        }
-        $("#cartas-computadora").html();
-        $("#cartas-computadora").append(html);
+        $(div).html();
+        $(div).append(html);
     }
 }
