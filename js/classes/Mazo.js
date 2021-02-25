@@ -33,6 +33,11 @@ class Mazo {
                 valor: 4
             },
         ];
+        this.nuevoMazo();
+    }
+
+    nuevoMazo() {
+        this.cartas = [];
         this.crearMazo();
         this.shuffle();
     }

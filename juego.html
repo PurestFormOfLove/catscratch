@@ -19,32 +19,32 @@
             <div id="tablero">
 
                 <div class="row" id="contenedortable">
-                    <h1 class="fondocomputadora">COM</h1>
+                    <h1 class="fondocomputadora"><span id="rondas-computadora"></span> COM</h1>
                     <div id="cartas-computadora"></div>
                 </div>
 
                 <div class="row" id="separador">
                     <div id="puntajep2" class="column">
                         <div id="contadorCOM">
-                            <p id="puntaje">Puntaje: <span>0</span></p>
+                            <p id="puntaje">Puntaje: <span id="puntaje-computadora">0</span></p>
                         </div>
                     </div>
                     <div id="puntajep1" class="column">
                         <div id="contadorP1">
-                            <div><p id="puntaje">Puntaje: <span>0</span></p></div>
+                            <div><p id="puntaje">Puntaje: <span id="puntaje-jugador">0</span></p></div>
                         </div>
                     </div>
                 </div>
 
                 <div class="row" id="contenedor2">
-                    <h1 class="fondojugador">Player</h1>
+                    <h1 class="fondojugador">Player <span id="rondas-jugador"></span></h1>
                     <div id="cartas-jugador"></div>
 
                 </div>
                 <div id="JugadorHUD">
                     <div id="JugadorHUD2">
                         <input type="button" value="Repartir" id="repartir">
-                        <input type="button" value="Terminar Turno" onclick="">
+                        <input type="button" value="Terminar Turno" id="terminar-turno">
                         <a href="index.html"><button>Terminar Partida!</button></a>
                     </div>
                 </div>
