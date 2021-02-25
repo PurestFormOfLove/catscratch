@@ -7,4 +7,8 @@ class Jugador {
     adicionarCarta(carta) {
         this.cartas.push(carta)
     }
+
+    limpiarMano() {
+        this.cartas = [];
+    }
 }

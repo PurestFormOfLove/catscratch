@@ -20,12 +20,12 @@ class Mazo {
             {
                 tipo: 'color1',
                 cantidad: 4,
-                valor: 4
+                valor: 2
             },
             {
                 tipo: 'color2',
                 cantidad: 4,
-                valor: 4
+                valor: 3
             },
             {
                 tipo: 'color3',
@@ -33,6 +33,11 @@ class Mazo {
                 valor: 4
             },
         ];
+        this.nuevoMazo();
+    }
+
+    nuevoMazo() {
+        this.cartas = [];
         this.crearMazo();
         this.shuffle();
     }
